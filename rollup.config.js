@@ -1,8 +1,10 @@
+// rollup.config.js
+import serve from "rollup-plugin-serve";
+
 export default {
-  input: "./src/main.js",
+  input: "src/main.js",
   output: {
-    file: "./build/bundle.min.js",
-    format: "iife",
-    name: "bundle",
+    file: "dist/bundle.js",
   },
+  plugins: [serve("src")],
 };

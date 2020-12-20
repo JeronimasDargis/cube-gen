@@ -1,10 +1,11 @@
 // rollup.config.js
-import serve from "rollup-plugin-serve";
+
+import resolve from "@rollup/plugin-node-resolve";
 
 export default {
   input: "src/main.js",
   output: {
     file: "dist/bundle.js",
   },
-  plugins: [serve("src")],
+  plugins: [resolve({ jsnext: true, main: true, browser: true })],
 };

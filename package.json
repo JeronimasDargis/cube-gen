@@ -2,7 +2,7 @@
   "name": "cube-gen",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
@@ -12,8 +12,10 @@
   "author": "Jeronimas Dargis",
   "license": "ISC",
   "devDependencies": {
-    "rollup": "^2.35.1",
-    "rollup-plugin-serve": "^1.1.0"
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "rollup": "^2.35.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "three": "^0.123.0"
+  }
 }
